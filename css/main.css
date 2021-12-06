@@ -1,0 +1,141 @@
+@charset 'utf-8';
+
+/*===========mobile===========*/
+
+/*header*/
+header .search{width: 60px; height: 60px; background: url(../img/home/h_search.png) no-repeat center / 30px auto; position: absolute; top: 0; right: 0;}
+header .search_box{position: absolute; top: 0; right: 0; width: 0; height: 60px; overflow-x: hidden; background-color: #20cbd3; transition: all 0.3s; z-index: 33;}
+header .search_box.on{width: 100%;}
+header .search_box .search_on{position: absolute; width: 90%; background-color: #ffffff; height: 40px; top: 50%; transform: translate(50%, -50%); right: 50%;}
+header .search_box .search_on input{border: 0; width: 80%; height: 40px; padding: 5px 0 5px 10px; font-size: 1.5rem;}
+header .search_box .search_on .on_icon{position: absolute; top: 0; right: 0; background: url(../img/home/h_search_close.png) no-repeat center / 20px auto; width: 40px; height: 40px; z-index: 5;}
+
+/*#container*/
+#container{padding-top: 60px;}
+
+/*#visual*/
+#container #visual .mob_tab{text-align: center; height: 250px; position: relative; background-color: #f2f2f2;}
+#container #visual .mob_tab img{position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+#container #visual .mob_tab .button{position: absolute; width: 15px; height: 30px; top: 50%; background-size: auto 30px; background-repeat: no-repeat; color: transparent; font-size: 0;}
+#container #visual .mob_tab .button.swiper-button-prev{background-image: url(../img/home/v_arr_left.png); left: 15px; z-index: 5;}
+#container #visual .mob_tab .button.swiper-button-next{background-image: url(../img/home/v_arr_right.png); right: 15px; z-index: 5;}
+
+#container #visual .web{display: none;}
+
+/*.list*/
+.list{display: flex; width: 335px; flex-flow: wrap; margin: 20px auto;}
+.list li{width: calc(50% - 10px); height: 75px; background-color: #20cbd3; background-image: url(../img/home/c01_list_bg.png); background-size: auto 75px; margin-bottom: 20px;}
+.list li:nth-child(2n){margin-right: 20px;}
+.list li a{display: block; width: 100%; height: 100%; position: relative;}
+.list .list01{width: 100%;}
+.list li a img{height: 30px; position: absolute; top: 10px; left: 50%; transform: translateX(-50%);}
+.list .list01 a img{height: 50px; top: 50%; transform: translateY(-50%); left: 40px;}
+.list li a h3{width: 100%; height: 30px; background-repeat: no-repeat; background-size: auto 20px; background-position-x: center; position: absolute; top: 45px;}
+.list li.list01 a h3{background-image: url(../img/home/c01_list_01_txt.png); background-size: auto 25px; background-position-x: 110px; top: 15px;}
+.list li.list01 a p{width: 100%; height: 20px; background: url(../img/home/c01_list_01_txt_sub.png) no-repeat 107px; background-size: auto 17px; position: absolute; top: 45px;}
+.list li.list02 a h3{background-image: url(../img/home/c01_list_02_txt.png);}
+.list li.list03 a h3{background-image: url(../img/home/c01_list_03_txt.png);}
+.list li.list04 a h3{background-image: url(../img/home/c01_list_04_txt.png);}
+.list li.list05 a h3{background-image: url(../img/home/c01_list_05_txt.png);}
+.list li.list06 a h3{background-image: url(../img/home/c01_list_06_txt.png);}
+.list li.list07 a h3{background-image: url(../img/home/c01_list_07_txt.png);}
+.list li.list02{background-position-x: -20px;}
+.list li.list03{background-position-x: 0px;}
+.list li.list04{background-position-x: -120px;}
+.list li.list05{background-position-x: -60px;}
+.list li.list06{background-position-x: -180px;}
+.list li.list07{background-position-x: -0px;}
+
+.chart{display: none;}
+
+.banner_mob{width: 100%; background-color: #6849ff; height: 100px; text-align: center;  overflow-x: hidden; position: relative;}
+.banner_mob a{display: block; width: 100%;}
+.banner_mob a img{height: 100px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.banner_web{display: none;}
+
+
+
+/*===========tablet===========*/
+@media(min-width:800px){
+#container #visual .mob_tab{height: 400px;}
+#container #visual .mob_tab button{height: 50px; background-size: auto 50px;}
+
+
+.list{width: 640px; margin-bottom: 50px;}
+.list li{width: calc((100% - 40px) / 3); height: 100px; margin-right: 20px;}
+.list li.list04, .list li.list07{margin-right: 0;}
+.list li.list01{width: 400px; margin: 20px 120px;}
+.list li a img{top: auto; left: auto; bottom: 10px; right: 10px; transform: translateX(0); height: 50px;}
+.list li a h3{top: 15px; background-position-x: 15px; height: 50px; background-size: auto 25px;}
+.list li.list01 a img{height: 60px; left: 45px;}
+.list li.list01 a h3{background-position-x: 130px; top: 25px; background-size: auto 30px;}
+.list li.list01 a p{top: 55px; background-position-x: 127px;} 
+
+.chart{display: block; padding: 0 100px; margin-bottom: 50px;}
+.chart .web_banner{display: none;}
+.chart h2{margin-left: 120px; height: 30px; background-image: url(../img/home/c02_title.png); background-repeat: no-repeat; background-size: auto 20px;}
+.chart h3{display: inline-block; margin-left: 25px; margin-top: 30px; margin: 30px 25px 20px 0;}
+.chart h3.all{margin-left: 115px;}
+.chart h3 button{font-size: 1.7rem; font-weight: 500;}
+.chart .on button{color: #333; font-weight: 700;}
+.chart .off button{color: #999;}
+.chart .chart_list01 h3{margin-left: 120px;}
+.chart .chart_box{display: flex; border-top: 5px solid #777; padding-top: 20px;}
+.chart .chart_box ul{width: calc((100% - 30px) / 2);}
+.chart .chart_box ul:nth-child(1){margin-right: 30px;}
+.chart .chart_box ul li a::after{display: block; content: ''; clear: both;}
+.chart .chart_box ul li a h4{font-size: 1.5rem; float: left; width: calc(90% - 25px); height: 30px; overflow-x: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.chart .chart_box ul li a p.date{float: right;}
+.chart .chart_box ul li a p.rank{float: left; font-weight: 700; font-size: 1.5rem; display: block; width: 25px;}
+
+.banner_mob{width: 100%; height: 150px; overflow-x: hidden; position: relative;}
+.banner_mob a img{height: 150px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+}
+
+
+
+
+
+/*=============pc=============*/
+@media(min-width:1280px){
+header{background-color: transparent; position: relative;}
+header h1{top: 5px; left: 0; transform: translate(0, 0); z-index: 99;}
+header .open_menu{left: auto; right: 0; z-index: 9;}
+header .close_menu{display: none;}
+header nav{left: auto; right: 0; width: 0px/*on -> 600px*/; overflow-x: hidden;}
+
+header .search{display: none;}
+header .search_box{width: 100%; background-color: transparent;}
+header .search_box .search_on{width: 300px; top: 50%; right: 60px; transform: translate(0, -50%); border-radius: 25px;}
+header .search_box .search_on input{margin-left: 20px;}
+header .search_box .search_on .on_icon{background-image: url(../img/home/h_search_on.png);}
+
+#container{padding: 0;}
+#container #visual .mob_tab{display: none;}
+
+#container #visual .web{display: block; width: 100%; height: 600px; background: url(../img/home/v_web.jpg) no-repeat center / cover; position: absolute; top: 0;}
+
+.list{position: absolute; left: calc(50% + 170px); transform: translateX(-50%); width: 810px; height: 320px; top: 110px;}
+
+.list li{background-color: rgba(255, 255, 255, 0.4); background-image: unset; width: 200px; height: 150px; margin: 0 20px 20px 0; border: 3px solid rgba(255, 255, 255, 0); transition: 0.5s all;}
+.list li:hover{background-color: rgba(255, 255, 255, 0); border: 3px solid rgba(200, 255, 255, 1);}
+.list li.list01{width: 150px; height: 320px; margin: 0 20px 0 0; position: absolute; left: -170px;}
+.list li a img{bottom: auto; top: 25px; right: auto; left: 50%; transform: translateX(-50%); height: 60px;}
+.list li a h3{top: 90px; background-position: center;}
+.list li.list01 a img{top: 70px; left: 50%; transform: translateY(0) translateX(-50%); height: 70px;}
+.list li.list01 a h3{background-position-x: 50%; background-size: 120px auto; top: 160px;}
+.list li.list01 a p{background-image: url(../img/home/c01_list_01_txt_sub_web.png); background-position-x: center; background-size: 90px auto; height: 30px; top: 200px;}
+
+.chart{margin-top: 600px; padding: 0;}
+.chart .chart_box{width: 55%;}
+.chart .chart_box ul{width: 90%; margin: 0 auto;}
+.chart .chart_box .tab{display: none;}
+
+.chart .off button:hover{color: #666;}
+.chart .chart_box ul li a:hover h4{text-decoration: underline;}
+
+.banner_mob{display: none;}
+.banner_web{display: block; position: absolute; top: 0; right: 0; width: 40%;}
+.banner_web a img{width: 100%;}
+
+}

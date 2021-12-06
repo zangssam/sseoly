@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>A93A55D2-BB78-42A0-8A61-38F88F88DFE8</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chat_module" transform="translate(-48.000000, -114.000000)" fill="#FFFFFF">
+            <g id="appbar">
+                <g id="appbar_btn_back_s" transform="translate(48.000000, 114.000000)">
+                    <g id="appbar_btn_back">
+                        <g id="actionbar_btn_back">
+                            <g id="ic_back">
+                                <path d="M23.007125,59.377125 L1.87912504,38.249125 C0.70712504,37.078125 0.70712504,35.178125 1.87812504,34.007125 L23.006125,12.879125 C24.178125,11.707125 26.078125,11.707125 27.249125,12.878125 C28.421125,14.050125 28.421125,15.949125 27.250125,17.121125 L8.24312504,36.128125 L27.249125,55.135125 C28.421125,56.306125 28.421125,58.206125 27.249125,59.377125 C26.664125,59.963125 25.896125,60.256125 25.128125,60.256125 C24.360125,60.256125 23.592125,59.963125 23.007125,59.377125 Z" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
